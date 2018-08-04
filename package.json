@@ -1,0 +1,46 @@
+{
+  "name": "react-express-mongodb",
+  "version": "1.0.0",
+  "description": "React, Express, MongoDB Example",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf build public/bundle.js",
+    "build": "webpack --mode production",
+    "start": "NODE_ENV=production node ./server/main.js",
+    "development": "NODE_ENV=development nodemon ./server/main.js --watch server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minjung-jeon/react-express-mongodb.git"
+  },
+  "author": "minjung-jeon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minjung-jeon/react-express-mongodb/issues"
+  },
+  "homepage": "https://github.com/minjung-jeon/react-express-mongodb#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "immutable": "^3.8.2",
+    "mongoose": "^5.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "react-hot-loader": "^4.0.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
